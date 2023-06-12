@@ -1,8 +1,8 @@
 <template>
     <div class="d-flex flex-row cardSpacing">
         <div class="flex-grow-1 d-flex flex-row cardInfo">
-            <div class="boxIcon">                            
-                <b-icon icon="cash-coin" class="iconeSize"></b-icon>
+            <div class="boxIcon">                          
+                <b-icon :icon="iconeReturn" class="iconeSize"></b-icon>
                 </div>
                 <div class="d-flex flex-column cardInfoText">
                     <span class="bold">Frete com menor valor</span>
@@ -19,7 +19,12 @@
 
 <script>
 export default {
-    props: ['infos']
+    props: ['infos','icone'],
+    computed: {
+        iconeReturn(){
+            return this.icone;
+        }
+    }
 }
 </script>
 

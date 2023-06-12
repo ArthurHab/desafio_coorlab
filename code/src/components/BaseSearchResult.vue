@@ -8,8 +8,8 @@
                 <div class="cardSpacing titleSpan">
                     Estas são as melhores alternativas de frete que encontramos para você.
                 </div>
-                <BaseCardTransport :infos="maisBarato"/>
-                <BaseCardTransport :infos="maisRapido"/>
+                <BaseCardTransport :infos="maisBarato" icone="cash-coin"/>
+                <BaseCardTransport :infos="maisRapido" icone="clock"/>
                 <div class="botaoLimparBox">
                     <BaseButton :action="clearData" text="Limpar"/>
                 </div>
